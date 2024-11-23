@@ -1,5 +1,7 @@
 package org.example;
 
+import org.example.sum.Calculate;
+import org.example.sum.Calculator;
 import org.junit.Assert;
 import org.junit.Test;
 

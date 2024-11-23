@@ -1,9 +1,9 @@
 
-2024-09-14 12:02:13.238 [main] INFO  org.example.Calculator - На 0 мы не делим
-2024-09-14 12:04:02.807 [main] INFO  org.example.Calculator - На 0 мы не делим
-2024-11-23 10:44:23.683 [main] ERROR org.example.Calculate - На 0 мы не делим
+2024-09-14 12:02:13.238 [main] INFO  org.example.sum.Calculator - На 0 мы не делим
+2024-09-14 12:04:02.807 [main] INFO  org.example.sum.Calculator - На 0 мы не делим
+2024-11-23 10:44:23.683 [main] ERROR org.example.sum.Calculate - На 0 мы не делим
 java.lang.ArithmeticException: На 0 мы не делим
-	at org.example.Calculate.div(Calculate.java:27) [classes/:?]
+	at org.example.sum.Calculate.div(Calculate.java:27) [classes/:?]
 	at org.example.AppTest.lambda$0(AppTest.java:29) [test-classes/:?]
 	at org.example.AppTest$$Lambda$35/667447085.run(Unknown Source) [test-classes/:?]
 	at org.junit.Assert.assertThrows(Assert.java:1001) [junit-4.13.1.jar:4.13.1]
