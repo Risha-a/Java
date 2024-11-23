@@ -3,18 +3,29 @@ package org.example;
 import org.junit.Assert;
 import org.junit.Test;
 
-import static org.example.Calculate.div;
-import static org.example.Calculate.sum;
-
 public class AppTest {
+    Calculator calculator = new Calculate();
+
     @Test
     public void testingSum(){
-        int test1 = sum(2, 2);
+        int test1 = calculator.sum(2, 2);
         Assert.assertEquals(4, test1);
     }
 
     @Test
+    public void testingDif(){
+        int test1 = calculator.dif(10, 6);
+        Assert.assertEquals(4, test1);
+    }
+
+    @Test
+    public void testingProd(){
+        double test1 = calculator.prod(4, 4);
+        Assert.assertEquals(16, test1, 0.001);
+    }
+
+    @Test
     public void testingDivThrows(){
-        Assert.assertThrows(ArithmeticException.class, () -> div(5, 0));
+        Assert.assertThrows(ArithmeticException.class, () -> calculator.div(5, 0));
     }
 }
